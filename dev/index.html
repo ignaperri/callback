@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+
+        <style>
+            *{
+                padding: 0px;
+                margin: 0px;  
+                list-style-type: none;    
+            }
+            ul::after{
+               content: " ";
+               clear: both;
+               display: block;       
+            }
+            ul{
+                transition: all 0.01s;
+            }
+            ul li{
+                float: left;
+            }
+            #contenedor{
+                overflow: hidden;
+            }
+            #botones{
+                display: inline;
+                background-color:cornflowerblue;
+                padding: 5px;
+            }
+            #contenedorBotonAuto{
+                display: inline;
+                padding: 5px;
+                margin-left: 15px;
+                background-color: darkgray;
+            }
+            #botonIndex{
+                margin-left: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        
+        <section id="botones">
+            <button type="button" id="botonCargarSlider1">Mostrar Slider 1</button>
+            <button type="button" id="botonCargarSlider2">Mostrar Slider 2</button>
+            <button type="button" id="botonIndex">-1-</button>
+            <section id="contenedorBotonAuto">
+                <button type="button" id="botonAutoPlay">Play</button>
+                <button type="button" id="botonAutoStop">Stop</button>
+                <button type="button" id="botonAutoSpeed">Speed</button>
+            </section>
+            
+        </section>
+        
+
+        <section id="contenedor">
+
+        </section>
+        
+        
+
+
+        <script src="js/eventos.js"></script>
+    </body>
+
+</html>
